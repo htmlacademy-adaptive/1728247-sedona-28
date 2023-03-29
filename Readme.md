@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Мария Крымова](https://up.htmlacademy.ru/adaptive/28/user/1728247).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Медведев](https://htmlacademy.ru/profile/exteep).
 
 ---
 

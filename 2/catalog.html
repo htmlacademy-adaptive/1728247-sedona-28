@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - каталог</title>
+    <base href="https://htmlacademy-adaptive.github.io/1728247-sedona-28/2/">
+</head>
+  <body>
+    <div class="body-container">
+      <header class="main-header">
+        <nav class="main-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__menu">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current main-nav__link--catalog" href="#">Фото и видео</a>
+              </li>
+              <li class="main-nav__item main-nav__item--logo logo">
+                <a class="logo__link" href="index.html" aria-label="Логотип Седоны - ссылка на главную страницу.">
+                  <img class="logo__img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--form" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--html" href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main-container">
+        <div class="hero">
+          <h1 class="visually-hidden">Насладитесь красотами Седоны, фото и видео вам помогут.</h1>
+          <picture>
+            <img class="hero__title-img" src="img/SEDONA_title.svg" width="229" height="39" alt="Красоты Седоны.">
+          </picture>
+        </div>
+
+        <section class="catalog">
+          <div class="catalog__header header">
+            <h2 class="header__title">Фото и видео</h2>
+            <p class="header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+
+          <ul class="catalog__list">
+            <li class="catalog__item card card--main">
+              <div class="card__photo-wrapper">
+                <a class="card__photo-link card__photo-link--main" href="#">
+                  <picture>
+                    <img class="card__photo card__photo--main" src="img/photo_mobile-sky-vasts.jpg" width="280" height="280" alt="Живописный вид на горы и дорогу на закате.">
+                  </picture>
+                </a>
+              </div>
+              <div class="card__text-wrapper">
+                <h3 class="card__title">Неродные просторы</h3>
+                <p class="card__author">Автор фото: Борис</p>
+              </div>
+              <div class="card__likes-area">
+                <button class="card__likes-button" type="button">
+                  <span class=visually-hidden>Поставить лайк</span>
+                </button>
+                <span class="card__likes">1350</span>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <div class="card__photo-wrapper">
+                <a class="card__photo-link" href="#">
+                  <picture>
+                    <img class="card__photo" src="img/photo_mobile-flora.jpg" width="280" height="280" alt="Цветущие местные кактусы на фоне скал.">
+                  </picture>
+                </a>
+              </div>
+              <div class="card__text-wrapper">
+                <h3 class="card__title">Местная растительность</h3>
+                <p class="card__author">Автор фото: Сергей</p>
+              </div>
+              <div class="card__likes-area">
+                <button class="card__likes-button" type="button">
+                  <span class=visually-hidden>Поставить лайк</span>
+                </button>
+                <span class="card__likes">143</span>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <div class="card__photo-wrapper">
+                <a class="card__photo-link" href="#">
+                  <picture>
+                    <img class="card__photo" src="img/photo_mobile-road.jpg" width="280" height="280" alt="Вид горного серпантина дороги среди лесов.">
+                  </picture>
+                </a>
+              </div>
+              <div class="card__text-wrapper">
+                <h3 class="card__title">Дорога на север</h3>
+                <p class="card__author">Автор фото: Петр</p>
+              </div>
+              <div class="card__likes-area">
+                <button class="card__likes-button" type="button">
+                  <span class=visually-hidden>Поставить лайк</span>
+                </button>
+                <span class="card__likes">96</span>
+              </div>
+            </li>
+
+            <li class="catalog__item card">
+              <div class="card__photo-wrapper">
+                <a class="card__photo-link" href="#">
+                  <picture>
+                    <img class="card__photo" src="img/photo_mobile-bridge-catalog.jpg" width="280" height="280" alt="Вид на скалу Мост Дьявола.">
+                  </picture>
+                </a>
+              </div>
+              <div class="card__text-wrapper">
+                <h3 class="card__title">Мост Дьявола</h3>
+                <p class="card__author">Автор фото: Антон</p>
+              </div>
+              <div class="card__likes-area">
+                <button class="card__likes-button" type="button">
+                  <span class=visually-hidden>Поставить лайк</span>
+                </button>
+                <span class="card__likes">254</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="video">
+          <div class="video__text-wrapper">
+            <h2 class="video__title">Все еще сомневаетесь?</h2>
+            <p class="video__description">Смотрите видеопрезентацию&nbsp;и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="video__shot-wrapper">
+            <picture>
+              <img class="video__shot" src="img/video_shot.jpg" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
+            </picture>
+            <button class="video__button" type="button" aria-label="Начать просмотр видеопрезентации."></button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <p class="page-footer__title">#visitsedona</p>
+        <section class="page-footer__socials socials">
+          <h2 class="visually-hidden">Социальные сети.</h2>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в ВК.</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграм.</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Наш канал Ютуб.</span>
+              </a>
+            </li>
+          </ul>
+          <div class="socials__html html-academy">
+            <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия, курс по вёрстке сайтов.">
+              Разработано
+              <svg class="html-academy__logo" aria-hidden="true" focusable="false" width="27" height="35" viewbox="0 0 27 35">
+                <use href="img/htmlacademy.svg"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

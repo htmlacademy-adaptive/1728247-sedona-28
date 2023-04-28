@@ -1,0 +1,47 @@
+.header {
+  @media (min-width: @tablet-width) {
+    padding-top: 66px;
+    padding-left: 160px;
+    padding-right: 145px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 99px;
+    padding-left: 381px;
+    padding-right: 381px;
+    margin-bottom: 23px;
+  }
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 23px;
+  .font-family-bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+
+  &--pixelperfect {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 29px;
+  }
+}
+
+.header__description {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

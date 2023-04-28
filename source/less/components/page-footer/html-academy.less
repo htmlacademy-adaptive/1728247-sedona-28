@@ -1,0 +1,49 @@
+.html-academy {
+  padding-left: 14px;
+  padding-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-right: 39px;
+    padding-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+  }
+}
+
+.html-academy__link {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  position: relative;
+
+  &:focus {
+    color: #81b3d2;
+    outline: none;
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.html-academy__link:focus .html-academy__logo {
+  fill: #81b3d2;
+}
+
+.html-academy__link:hover .html-academy__logo {
+  fill: #81b3d2;
+}
+
+.html-academy__logo {
+  fill: #000000;
+  position: absolute;
+  top: -7px;
+  left: 101px;
+}

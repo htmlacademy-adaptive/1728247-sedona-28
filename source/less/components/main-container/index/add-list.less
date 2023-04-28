@@ -1,0 +1,192 @@
+.add-list {
+  text-align: left;
+  padding: 23px 18px 44.5px;
+  background-color: #ffffff;
+  color: #333333;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-height: 331px;
+    text-align: center;
+    align-items: center;
+    padding: 0 0;
+    flex-wrap: wrap;
+  }
+}
+
+.add-list__item {
+  padding-left: 47px;
+  padding-bottom: 24px;
+  padding-top: 8px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .main-adv__title {
+    padding-bottom: 16px;
+  }
+
+  &--accomodation {
+    background-image: url("../img/advantage-accomodation-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  &--food {
+    background-image: url("../img/advantage-food-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  &--souvenirs {
+    background-image: url("../img/advantage-souvenirs-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 123px;
+    padding-left: 0;
+    padding-bottom: 2px;
+    width: 33.3%;
+    min-height: 331px;
+
+    &--accomodation {
+      background-image: url("../img/advantage-accomodation-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 96px 60px;
+    }
+
+    &--food {
+      background-image: url("../img/advantage-food-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 94px 62px;
+    }
+
+    &--souvenirs {
+      background-image: url("../img/advantage-souvenirs-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: 105px 63px;
+    }
+
+    @media (min-width: @desktop-width) {
+      &--accomodation {
+        background-image: url("../img/advantage-accomodation-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: 160px 70px;
+      }
+
+      &--food {
+        background-image: url("../img/advantage-food-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: 161px 73px;
+      }
+
+      &--souvenirs {
+        background-image: url("../img/advantage-souvenirs-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: 160px 69px;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 330px;
+    padding-top: 167px;
+    padding-left: 49px;
+    padding-right: 46px;
+  }
+}
+
+.add-list__title {
+  padding-left: 0;
+  padding-right: 0;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+    font-size: 21px;
+    line-height: 26px;
+
+    &--accomodation {
+      padding-top: 35px;
+      padding-left: 15px;
+    }
+
+    &--food {
+      padding-top: 32px;
+      padding-left: 16px;
+      margin-bottom: 9px;
+    }
+
+    &--souvenirs {
+      padding-top: 30px;
+      padding-left: 17px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--accomodation {
+      padding-top: 2px;
+      padding-left: 0;
+      padding-right: 2px;
+    }
+
+    &--food {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 5px;
+    }
+
+    &--souvenirs {
+      padding-top: 3px;
+      padding-left: 0;
+      padding-right: 2px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.add-list__description--food br,
+.add-list__description--souvenirs br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.add-list__description {
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 25px;
+
+    &--food {
+      padding-left: 23px;
+      padding-right: 8px;
+    }
+
+    &--souvenirs {
+      padding-left: 53px;
+      padding-right: 40px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--accomodation {
+      padding-left: 0;
+      padding-right: 2px;
+    }
+
+    &--food {
+      padding-left: 3px;
+    }
+
+    &--souvenirs {
+      padding-left: 36px;
+      padding-right: 41px;
+    }
+  }
+}

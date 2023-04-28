@@ -1,0 +1,245 @@
+.main-nav__wrapper {
+  padding-top: 96px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+
+    &--logo {
+      display: inline;
+    }
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    padding-top: 0;
+  }
+
+  .main-nav--opened .main-nav__item--logo {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__menu {
+    position: absolute;
+    z-index: 5;
+  }
+
+  .main-nav--opened {
+    margin-bottom: 96px;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: -23px;
+  width: 23px;
+  height: 22px;
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: -22.5px;
+  width: 23px;
+  height: 22px;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+
+  &--logo {
+    display: inline;
+  }
+}
+
+.main-nav--nojs .hero {
+  margin-top: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  padding: 0;
+  background-color: #81b3d2;
+  cursor: pointer;
+  border: none;
+  z-index: 7;
+
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__menu {
+  .font-family-bold;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  background-color: #81b3d2;
+  min-height: 55px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 rgba(1, 1, 1, 0.2);
+  border-bottom: 1px solid #678fa8;
+
+  &:last-of-type::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+    left: 0;
+    width: 100%;
+    height: 7px;
+    z-index: 2;
+    box-shadow: inset 0 4px 6px -2px fade(#000000, 30%);
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    box-shadow: none;
+    border: none;
+    width: 20%;
+    padding-top: 2px;
+
+    &:last-of-type::before {
+      display: none;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #ffffff;
+    }
+
+    &:disabled {
+      background-color: #ffffff;
+      color: #e5e5e5;
+    }
+  }
+}
+
+.main-nav__item--pixelperfect {
+  @media (min-width: @tablet-width) {
+    margin-right: -6px;
+  }
+}
+
+.main-nav__link {
+  color: #ffffff;
+  padding-top: 17.5px;
+  padding-bottom: 12px;
+  padding-left: 93px;
+  padding-right: 90px;
+  .font-family-bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  &:focus {
+    outline: none;
+    color: rgba(118, 99, 87, 0.5);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 10px;
+    padding-right: 0;
+
+    &--current {
+      color: #766357;
+    }
+
+    &--main {
+      padding-left: 6px;
+    }
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--main,
+    &--catalog {
+      padding-left: 2px;
+    }
+
+    &--form {
+      padding-left: 0;
+      padding-right: 10px;
+    }
+  }
+}
+
+.main-nav__link--html {
+  @media (min-width: @tablet-width) {
+    padding-left: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 2px;
+  }
+}

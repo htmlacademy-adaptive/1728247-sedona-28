@@ -2,12 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - форма</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div class="body-container">
       <header class="main-header">
-        <nav class="main-header__nav main-nav">
+        <div class="main-header__logo logo">
+          <a class="logo__link" href="index.html" aria-label="Логотип Седоны - ссылка на главную страницу.">
+            <img class="logo__img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+          </a>
+        </div>
+        <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/закрыть меню</span>
           </button>
@@ -19,12 +34,9 @@
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Фото и видео</a>
               </li>
-              <li class="main-nav__item main-nav__item--logo logo">
-                <a class="logo__link" href="index.html" aria-label="Логотип Седоны - ссылка на главную страницу.">
-                  <img class="logo__img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
-                </a>
+              <li class="main-nav__item main-nav__item--logo">
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--pixelperfect">
                 <a class="main-nav__link main-nav__link--current main-nav__link--form" href="#">Форма отзыва</a>
               </li>
               <li class="main-nav__item">
@@ -38,6 +50,8 @@
       <main class="main-container">
         <div class="hero">
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/SEDONA_title-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/SEDONA_title-tablet.svg">
             <img class="hero__title-img" src="img/SEDONA_title.svg" width="229" height="39" alt="Красоты Седоны.">
           </picture>
         </div>
@@ -69,7 +83,7 @@
               </fieldset>
 
               <fieldset class="form__block form-fields form__block--user">
-                <legend class="form__title form__title--contacts">Контактная информация:</legend>
+                <legend class="form__title form__title--pixelperfect form__title--contacts">Контактная информация:</legend>
                 <ul class="form-fields__user-contacts">
                   <li class="form-fields__contact-item input-text">
                     <label class="form-fields__title input-text--phone" for="phone">Контактный телефон*:</label>
@@ -91,7 +105,7 @@
                     <ul class="form-fields__opinions-list">
                       <li class="form-fields__opinion-item radio">
                         <input class="radio__input" type="radio" id="positive" name="opinion" value="positive" checked>
-                        <label class="radio__label" for="positive">Скорее положительное</label>
+                        <label class="radio__label radio__label--pixelperfect" for="positive">Скорее положительное</label>
                       </li>
                       <li class="form-fields__opinion-item radio">
                         <input class="radio__input" type="radio" id="negative" name="opinion" value="negative">
@@ -167,15 +181,15 @@
               </a>
             </li>
           </ul>
-          <div class="socials__html html-academy">
-            <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия, курс по вёрстке сайтов.">
-              Разработано
-              <svg class="html-academy__logo" aria-hidden="true" focusable="false" width="27" height="35" viewbox="0 0 27 35">
-                <use href="img/htmlacademy.svg"></use>
-              </svg>
-            </a>
-          </div>
         </section>
+        <div class="page-footer__html html-academy">
+          <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия, курс по вёрстке сайтов.">
+            Разработано
+            <svg class="html-academy__logo" aria-hidden="true" focusable="false" width="27" height="35" viewbox="0 0 27 35">
+              <use href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </footer>
 
       <div class="modal">
@@ -195,5 +209,6 @@
         </div>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

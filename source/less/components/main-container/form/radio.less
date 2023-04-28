@@ -1,0 +1,104 @@
+.radio {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    min-height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.radio__label {
+  .font-family-bold;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 24px;
+  cursor: pointer;
+  color: #000000;
+
+  &:focus {
+    color: #d2d2d2;
+    outline: none;
+  }
+
+  &:hover {
+    color: #d2d2d2;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 0;
+  }
+}
+
+.radio__label--pixelperfect {
+  padding-left: 31px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 0;
+  }
+}
+
+.radio__input {
+  appearance: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  left: -3px;
+  top: -14px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #e5e5e5;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+
+  &:disabled {
+    background-color: transparent;
+  }
+}
+
+.radio__input:checked:focus + .radio__label {
+  color: #d2d2d2;
+  outline: none;
+}
+
+.radio__input:checked + .radio__label::before {
+  position: absolute;
+  background-color: #333333;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 17px;
+  top: 4px;
+  content: "";
+}
+
+.radio__input:checked:active + .radio__label::before {
+  position: absolute;
+  background-color: #333333;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 17px;
+  top: 4px;
+  content: "";
+  opacity: 0.3;
+}

@@ -1,0 +1,39 @@
+.sedona-map {
+  min-height: 350px;
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+.sedona-map__iframe {
+  border: none;
+  .block;
+  width: 320px;
+  height: 350px;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../imp/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background-image: url("../img/map-tablet.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../imp/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-image: url("../img/map-desktop.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../imp/map-desktop@2x.jpg");
+    }
+  }
+}

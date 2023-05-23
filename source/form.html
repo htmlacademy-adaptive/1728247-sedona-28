@@ -36,7 +36,7 @@
               </li>
               <li class="main-nav__item main-nav__item--logo">
               </li>
-              <li class="main-nav__item main-nav__item--pixelperfect">
+              <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--current main-nav__link--form" href="#">Форма отзыва</a>
               </li>
               <li class="main-nav__item">
@@ -83,7 +83,7 @@
               </fieldset>
 
               <fieldset class="form__block form-fields form__block--user">
-                <legend class="form__title form__title--pixelperfect form__title--contacts">Контактная информация:</legend>
+                <legend class="form__title form__title--contacts">Контактная информация:</legend>
                 <ul class="form-fields__user-contacts">
                   <li class="form-fields__contact-item input-text">
                     <label class="form-fields__title input-text--phone" for="phone">Контактный телефон*:</label>
@@ -143,7 +143,7 @@
               </div>
               <div class="opinion-wrapper">
                 <fieldset class="form__block form__block--review form-fields">
-                  <legend class="form__title form__title--pixelperfect form__title--emotions">Опишите свои эмоции:</legend>
+                  <legend class="form__title form__title--emotions">Опишите свои эмоции:</legend>
                   <div class="input-text input-text--area">
                     <label class="visually-hidden" for="review">Введите свой отзыв</label>
                     <textarea class="input-text__field input-text__field--user-review" id="review" name="user-review" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -195,14 +195,14 @@
       <div class="modal">
         <div class="modal__window modal__window--error window">
           <h2 class="window__title">Что-то пошло не так!</h2>
-          <p class="window__descripton">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <p class="window__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="window__button" type="button" aria-label="Закрыть окно предупреждения.">Ок</button>
         </div>
       </div>
       <div class="modal">
         <div class="modal__window modal__window--success window">
-          <h2 class="window__title">Ваш отзыв отправлен!</h2>
-          <p class="window__descripton">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+          <h2 class="window__title window__title--success">Ваш отзыв отправлен!</h2>
+          <p class="window__description window__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
           <div class="window--background">
             <button class="window__button window__button--close" type="button" aria-label="Закрыть окно подтверждения.">Закрыть окно</button>
           </div>

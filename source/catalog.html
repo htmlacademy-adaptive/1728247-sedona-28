@@ -59,7 +59,7 @@
 
         <section class="catalog">
           <div class="catalog__header header">
-            <h2 class="header__title header__title--pixelperfect">Фото и видео</h2>
+            <h2 class="header__title">Фото и видео</h2>
             <p class="header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
 
@@ -77,15 +77,17 @@
                   </picture>
                 </a>
               </div>
-              <div class="card__text-wrapper">
-                <h3 class="card__title">Неродные просторы</h3>
-                <p class="card__author">Автор фото: Борис</p>
-              </div>
-              <div class="card__likes-area">
-                <button class="card__likes-button" type="button">
-                  <span class=visually-hidden>Поставить лайк</span>
-                </button>
-                <span class="card__likes">1350</span>
+              <div class="card__description-container card__description-container--main">
+                <div class="card__text-wrapper">
+                  <h3 class="card__title">Неродные просторы</h3>
+                  <p class="card__author">Автор фото: Борис</p>
+                </div>
+                <div class="card__likes-area">
+                  <button class="card__likes-button" type="button">
+                    <span class=visually-hidden>Поставить лайк</span>
+                  </button>
+                  <span class="card__likes">1350</span>
+                </div>
               </div>
             </li>
 
@@ -102,19 +104,21 @@
                   </picture>
                 </a>
               </div>
-              <div class="card__text-wrapper">
-                <h3 class="card__title">Местная растительность</h3>
-                <p class="card__author">Автор фото: Сергей</p>
-              </div>
-              <div class="card__likes-area">
-                <button class="card__likes-button" type="button">
-                  <span class=visually-hidden>Поставить лайк</span>
-                </button>
-                <span class="card__likes">143</span>
+              <div class="card__description-container">
+                <div class="card__text-wrapper">
+                  <h3 class="card__title">Местная растительность</h3>
+                  <p class="card__author">Автор фото: Сергей</p>
+                </div>
+                <div class="card__likes-area">
+                  <button class="card__likes-button" type="button">
+                    <span class=visually-hidden>Поставить лайк</span>
+                  </button>
+                  <span class="card__likes">143</span>
+                </div>
               </div>
             </li>
 
-            <li class="catalog__item card">
+            <li class="catalog__item catalog__item--dark card">
               <div class="card__photo-wrapper">
                 <a class="card__photo-link" href="#">
                   <picture>
@@ -127,15 +131,17 @@
                   </picture>
                 </a>
               </div>
-              <div class="card__text-wrapper">
-                <h3 class="card__title">Дорога на север</h3>
-                <p class="card__author">Автор фото: Петр</p>
-              </div>
-              <div class="card__likes-area">
-                <button class="card__likes-button" type="button">
-                  <span class=visually-hidden>Поставить лайк</span>
-                </button>
-                <span class="card__likes">96</span>
+              <div class="card__description-container">
+                <div class="card__text-wrapper">
+                  <h3 class="card__title">Дорога на север</h3>
+                  <p class="card__author">Автор фото: Петр</p>
+                </div>
+                <div class="card__likes-area">
+                  <button class="card__likes-button" type="button">
+                    <span class=visually-hidden>Поставить лайк</span>
+                  </button>
+                  <span class="card__likes">96</span>
+                </div>
               </div>
             </li>
 
@@ -152,15 +158,17 @@
                   </picture>
                 </a>
               </div>
-              <div class="card__text-wrapper">
-                <h3 class="card__title">Мост Дьявола</h3>
-                <p class="card__author">Автор фото: Антон</p>
-              </div>
-              <div class="card__likes-area">
-                <button class="card__likes-button" type="button">
-                  <span class=visually-hidden>Поставить лайк</span>
-                </button>
-                <span class="card__likes">254</span>
+              <div class="card__description-container">
+                <div class="card__text-wrapper">
+                  <h3 class="card__title">Мост Дьявола</h3>
+                  <p class="card__author">Автор фото: Антон</p>
+                </div>
+                <div class="card__likes-area">
+                  <button class="card__likes-button" type="button">
+                    <span class=visually-hidden>Поставить лайк</span>
+                  </button>
+                  <span class="card__likes">254</span>
+                </div>
               </div>
             </li>
           </ul>
@@ -172,14 +180,16 @@
             <p class="video__description">Смотрите видеопрезентацию&nbsp;и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__shot-wrapper">
-            <picture>
-              <!-- <source type="image/webp" media=" (min-width: 1200px) " srcset="img/video_shot-desktop.webp 1x, img/video_shot-desktop@2x.webp 2x">
-              <source type="image/webp" media=" (min-width: 768px) " srcset="img/video_shot-tablet.webp 1x, img/video_shot-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/video_shot.webp 1x, img/video_shot-mobile@2x.webp 2x"> -->
-              <source media=" (min-width: 1200px) " srcset="img/video_shot-desktop.jpg 1x, img/video_shot-desktop@2x.jpg 2x" width="800" height="500">
-              <source media=" (min-width: 768px) " srcset="img/video_shot-tablet.jpg 1x, img/video_shot-tablet@2x.jpg 2x" width="648" height="500">
-              <img class="video__shot" src="img/video_shot.jpg" srcset="img/video_shot-mobile@2x.jpg 2x" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
-            </picture>
+            <a href="#" aria-label="Открыть видеопрезентацию по ссылке.">
+              <picture>
+                <!-- <source type="image/webp" media=" (min-width: 1200px) " srcset="img/video_shot-desktop.webp 1x, img/video_shot-desktop@2x.webp 2x">
+                <source type="image/webp" media=" (min-width: 768px) " srcset="img/video_shot-tablet.webp 1x, img/video_shot-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video_shot.webp 1x, img/video_shot-mobile@2x.webp 2x"> -->
+                <source media=" (min-width: 1200px) " srcset="img/video_shot-desktop.jpg 1x, img/video_shot-desktop@2x.jpg 2x" width="800" height="500">
+                <source media=" (min-width: 768px) " srcset="img/video_shot-tablet.jpg 1x, img/video_shot-tablet@2x.jpg 2x" width="648" height="500">
+                <img class="video__shot" src="img/video_shot.jpg" srcset="img/video_shot-mobile@2x.jpg 2x" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
+              </picture>
+            </a>
             <button class="video__button" type="button" aria-label="Начать просмотр видеопрезентации."></button>
           </div>
         </section>

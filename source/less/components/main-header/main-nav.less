@@ -207,6 +207,14 @@
       padding-left: 3px;
     }
 
+    &--catalog {
+      padding-left: 2px;
+    }
+
+    &--html {
+      padding-right: 2px;
+    }
+
     &:hover {
       color: #81b3d2;
     }
@@ -217,8 +225,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    &--main {
+    &--main,
+    &--catalog {
       padding-left: 0;
+    }
+
+    &--html {
+      padding-right: 0;
     }
   }
 }

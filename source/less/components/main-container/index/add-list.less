@@ -11,6 +11,7 @@
     align-items: center;
     padding: 0 0;
     flex-wrap: wrap;
+    margin-top: -1px;
   }
 }
 
@@ -21,10 +22,6 @@
 
   &:last-of-type {
     padding-bottom: 0;
-  }
-
-  .main-adv__title {
-    padding-bottom: 16px;
   }
 
   &--accomodation {
@@ -51,33 +48,34 @@
     flex-direction: column;
     padding-top: 123px;
     padding-left: 0;
-    padding-bottom: 2px;
+    padding-right: 16px;
+    padding-bottom: 5px;
     width: 33.3%;
     min-height: 331px;
 
     &--accomodation {
       background-image: url("../img/advantage-accomodation-tablet.svg");
       background-repeat: no-repeat;
-      background-position: 96px 60px;
+      background-position: 88px 59px;
     }
 
     &--food {
       background-image: url("../img/advantage-food-tablet.svg");
       background-repeat: no-repeat;
-      background-position: 94px 62px;
+      background-position: 86px 61px;
     }
 
     &--souvenirs {
       background-image: url("../img/advantage-souvenirs-tablet.svg");
       background-repeat: no-repeat;
-      background-position: 105px 63px;
+      background-position: 97px 63px;
     }
 
     @media (min-width: @desktop-width) {
       &--accomodation {
         background-image: url("../img/advantage-accomodation-desktop.svg");
         background-repeat: no-repeat;
-        background-position: 160px 70px;
+        background-position: 159px 70px;
       }
 
       &--food {
@@ -106,6 +104,7 @@
   padding-left: 0;
   padding-right: 0;
   color: #000000;
+  padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 8px;
@@ -114,18 +113,17 @@
 
     &--accomodation {
       padding-top: 35px;
-      padding-left: 15px;
+      padding-left: 16px;
     }
 
     &--food {
-      padding-top: 32px;
+      padding-top: 33px;
       padding-left: 16px;
-      margin-bottom: 9px;
     }
 
     &--souvenirs {
       padding-top: 30px;
-      padding-left: 17px;
+      padding-left: 15px;
     }
   }
 
@@ -133,20 +131,20 @@
     &--accomodation {
       padding-top: 2px;
       padding-left: 0;
-      padding-right: 2px;
+      padding-right: 3px;
     }
 
     &--food {
       padding-top: 0;
       padding-left: 0;
-      padding-right: 5px;
+      padding-right: 4px;
     }
 
     &--souvenirs {
-      padding-top: 3px;
+      padding-top: 4px;
       padding-left: 0;
       padding-right: 2px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
   }
 }
@@ -169,23 +167,23 @@
     }
 
     &--souvenirs {
-      padding-left: 53px;
-      padding-right: 40px;
+      padding-left: 35px;
+      padding-right: 21px;
     }
   }
 
   @media (min-width: @desktop-width) {
     &--accomodation {
       padding-left: 0;
-      padding-right: 2px;
+      padding-right: 3px;
     }
 
     &--food {
-      padding-left: 3px;
+      padding-left: 4px;
     }
 
     &--souvenirs {
-      padding-left: 36px;
+      padding-left: 38px;
       padding-right: 41px;
     }
   }

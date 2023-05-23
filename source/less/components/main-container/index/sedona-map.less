@@ -1,8 +1,12 @@
 .sedona-map {
   min-height: 350px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11.2px;
+  }
 }
 
 .sedona-map__iframe {

@@ -102,6 +102,8 @@
 }
 
 .video__shot {
+  background-color: #e4d7ce;
+
   @media (min-width: @tablet-width) {
     width: 648px;
     height: 500px;
@@ -110,5 +112,21 @@
   @media (min-width: @desktop-width) {
     width: 800px;
     height: 500px;
+  }
+}
+
+.video__shot-link {
+  &:focus {
+    outline: 0.5px solid #000000;
+    border-radius: 2px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
   }
 }

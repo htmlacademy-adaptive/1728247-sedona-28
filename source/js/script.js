@@ -1,3 +1,4 @@
+// Navigation menu
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 
@@ -13,5 +14,10 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+// Sedona-map
 let map = document.querySelector(".sedona-map");
 map.classList.remove("sedona-map--nojs");
+
+// Form
+/*
+let form = document.querySelector('.feedback');*/

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/ptsans.woff" as="font">
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff" as="font">
@@ -17,11 +17,6 @@
   <body>
     <div class="body-container">
       <header class="main-header">
-        <div class="main-header__logo logo">
-          <a class="logo__link" href="index.html" aria-label="Логотип Седоны - ссылка на главную страницу.">
-            <img class="logo__img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
-          </a>
-        </div>
         <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -34,7 +29,10 @@
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Фото и видео</a>
               </li>
-              <li class="main-nav__item main-nav__item--logo">
+              <li class="main-nav__item main-nav__item--logo logo">
+                <a class="logo__link" href="index.html" aria-label="Логотип Седоны - ссылка на главную страницу.">
+                  <img class="logo__img" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+                </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--form" href="form.html">Форма отзыва</a>
@@ -49,14 +47,14 @@
 
       <main class="main-container">
 
-        <section class="main-banner">
+        <div class="main-banner">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону.</h1>
           <picture>
             <source media=" (min-width: 1200px) " srcset="img/welcome-to-sedona-desktop.svg" width="460" height="350">
             <source media=" (min-width: 768px) " srcset="img/welcome-to-sedona-tablet.svg" width="461" height="350">
             <img class="main-banner__text" src="img/welcome-to-sedona.svg" width="282" height="214" alt="Потому что Гранд-Каньон - отстой!">
           </picture>
-        </section>
+        </div>
 
         <section class="main-adv">
           <div class="main-adv__wrapper">
@@ -72,9 +70,9 @@
               </div>
               <div class="main-adv__photo-wrapper">
                 <picture>
-                  <!-- <source type="image/webp" media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.webp 1x, img/photo_desktop-real-city@2x.webp 2x">
+                  <source type="image/webp" media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.webp 1x, img/photo_desktop-real-city@2x.webp 2x">
                   <source type="image/webp" media=" (min-width: 768px) " srcset="img/photo_tablet-real-city.webp 1x, img/photo_tablet-real-city@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo_mobile-real-city.webp 1x, img/photo_mobile-real-city@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/photo_mobile-real-city.webp 1x, img/photo_mobile-real-city@2x.webp 2x">
                   <source media=" (min-width: 1200px) " srcset="img/photo_desktop-real-city.jpg 1x, img/photo_desktop-real-city@2x.jpg 2x">
                   <source media=" (min-width: 768px) " srcset="img/photo_tablet-real-city.jpg 1x, img/photo_tablet-real-city@2x.jpg 2x">
                   <img class="main-adv__photo-img" src="img/photo_mobile-real-city.jpg" srcset="img/photo_mobile-real-city@2x.jpg 2x" width="320" height="260" alt="Город Седона.">
@@ -105,9 +103,9 @@
               </div>
               <div class="main-adv__photo-wrapper">
                 <picture>
-                  <!-- <source type="image/webp" media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.webp 1x, img/photo_desktop-devil-bridge-index@2x.webp 2x">
+                  <source type="image/webp" media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.webp 1x, img/photo_desktop-devil-bridge-index@2x.webp 2x">
                   <source type="image/webp" media=" (min-width: 768px) " srcset="img/photo_tablet-devil-bridge-index.webp 1x, img/photo_tablet-devil-bridge-index@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo_mobile-devil-bridge-index.webp 1x, img/photo_mobile-devil-bridge-index@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/photo_mobile-devil-bridge-index.webp 1x, img/photo_mobile-devil-bridge-index@2x.webp 2x">
                   <source media=" (min-width: 1200px) " srcset="img/photo_desktop-devil-bridge-index.jpg 1x, img/photo_desktop-devil-bridge-index@2x.jpg 2x">
                   <source media=" (min-width: 768px) " srcset="img/photo_tablet-devil-bridge-index.jpg 1x, img/photo_tablet-devil-bridge-index@2x.jpg 2x">
                   <img class="main-adv__photo-img" src="img/photo_mobile-devil-bridge-index.jpg" srcset="img/photo_mobile-devil-bridge-index@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола.">

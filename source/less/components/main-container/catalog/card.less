@@ -149,12 +149,17 @@
 
 .card__photo {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   background-color: #52662c;
 
   &--main {
     background-color: #e4a569;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    inset: 0;
   }
 }
 
@@ -171,8 +176,9 @@
     padding-left: 6px;
     padding-top: 11px;
     padding-bottom: 6px;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
 
     &--main {
       padding-left: 2px;

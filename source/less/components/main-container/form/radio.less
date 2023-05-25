@@ -24,15 +24,6 @@
   cursor: pointer;
   color: #000000;
 
-  &:focus {
-    color: #d2d2d2;
-    outline: none;
-  }
-
-  &:hover {
-    color: #d2d2d2;
-  }
-
   @media (max-width: @mobile-width-only) {
     padding-left: 0;
     padding-right: 8px;
@@ -80,11 +71,6 @@
     left: -4px;
     top: -13px;
   }
-}
-
-.radio__input:checked:focus + .radio__label {
-  color: #d2d2d2;
-  outline: none;
 }
 
 .radio__input:checked + .radio__label::before {

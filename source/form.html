@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - форма</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/ptsans.woff" as="font">
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
     <link rel="icon" href="img/favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -61,7 +61,7 @@
           </div>
 
           <form class="feedback__form form" action="#" method="post">
-            <div class="form__user-info">
+            <section class="form__user-info">
               <fieldset class="form__block form__block--border form__block--user form-fields">
                 <legend class="form__title form__title--name">Представьтесь:</legend>
                 <ul class="form-fields__user-name">
@@ -84,16 +84,16 @@
                 <legend class="form__title form__title--contacts">Контактная информация:</legend>
                 <ul class="form-fields__user-contacts">
                   <li class="form-fields__contact-item input-text">
-                    <label class="form-fields__title input-text--phone" for="phone">Контактный телефон*:</label>
+                    <label class="form-fields__title form-fields__title--phone" for="phone">Контактный телефон*:</label>
                     <input class="input-text__field input-text__field--phone" type="tel" id="phone" name="phonenumber" placeholder="Введите телефон" required>
                   </li>
                   <li class="form-fields__contact-item input-text">
-                    <label class="form-fields__title input-text--mail" for="email">Электронная почта*:</label>
+                    <label class="form-fields__title form-fields__title--mail" for="email">Электронная почта*:</label>
                     <input class="input-text__field input-text__field--mail" type="email" id="email" name="email-address" placeholder="Введите e-mail" required>
                   </li>
                 </ul>
               </fieldset>
-            </div>
+            </section>
 
             <section class="user-opinion">
               <h3 class="visually-hidden">Оцените своё путешествие</h3>
@@ -150,10 +150,10 @@
               </div>
             </section>
 
-            <div class="form__submit">
+            <section class="form__submit">
               <button class="form__button" type="submit" aria-label="Нажмите чтобы отправить свой отзыв">Отправить отзыв</button>
               <span class="form__required-note">* — обязательные поля</span>
-            </div>
+            </section>
           </form>
         </section>
       </main>

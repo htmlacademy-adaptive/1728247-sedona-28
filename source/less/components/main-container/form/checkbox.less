@@ -26,6 +26,7 @@
   cursor: pointer;
   color: #000000;
   padding-top: 1px;
+  position: relative;
 }
 
 .checkbox__input {
@@ -57,22 +58,23 @@
   }
 }
 
-.checkbox__input:checked {
+.checkbox__input:checked + .checkbox__label::before {
+  position: absolute;
+  content: "";
   background-image: url("../img/icon-check.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
+  width: 22px;
+  height: 16px;
+  left: 15px;
+  top: 3px;
+}
 
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:focus {
-    background-color: #e5e5e5;
-    outline: none;
-  }
-
-  &:active {
-    opacity: 0.3;
-    background-color: #d5d5d5;
-  }
+.checkbox__input:checked:active + .checkbox__label::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-check.svg");
+  width: 22px;
+  height: 16px;
+  left: 15px;
+  top: 3px;
+  opacity: 0.3;
 }
